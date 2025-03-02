@@ -15,7 +15,7 @@ sudo apt install fonts-ubuntu fonts-dejavu fonts-noto fonts-liberation fonts-fir
 ```
 fonts (on arch):
 ```bash
-sudo pacman -S ttf-ubuntu-font-family ttf-dejavu noto-fonts ttf-liberation ttf-fira-code ttf-hack ttf-roboto
+sudo pacman -S ttf-ubuntu-font-family ttf-dejavu noto-fonts ttf-liberation ttf-fira-code ttf-hack ttf-roboto noto-fonts-emoji
 ```
 fonts (on fedora):
 ```bash
