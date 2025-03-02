@@ -5,7 +5,7 @@ rofi picom kitty thunar feh eza materia-gtk-theme lxappearance papirus-icon-them
 ```
 optional deps
 ```bash
-vscodium discord spotity cava steam zen-browser
+vscodium discord spotity cava steam zen-browser btop
 ```
 
 # Fonts
