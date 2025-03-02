@@ -1,7 +1,7 @@
 # Dependencies
 the deps are obviously awesome (git version) and
 ```
-rofi picom kitty thunar
+rofi picom kitty thunar feh eza materia-gtk-theme lxappearance papirus-icon-theme
 ```
 optional deps
 ```bash
