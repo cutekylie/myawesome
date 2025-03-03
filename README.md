@@ -1,11 +1,11 @@
 # Dependencies
 the deps are obviously awesome (git version) and
 ```
-rofi picom kitty thunar feh eza materia-gtk-theme lxappearance papirus-icon-theme
+rofi picom kitty thunar maim xclip tumbler feh eza materia-gtk-theme lxappearance papirus-icon-theme
 ```
 optional deps
 ```bash
-vscodium discord spotity cava steam zen-browser btop
+vscodium discord spotity cava steam zen-browser btop pix
 ```
 
 # Fonts
