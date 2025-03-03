@@ -49,7 +49,7 @@ client.connect_signal('request::default_keybindings', function()
     		key = 'Print',
     		description = 'full screenshot',
     		group = 'client',
-    		on_press = function() awful.spawn.with_shell('maim /home/metodico/Pictures/Screenshot/$(date +%Y%m%d_%H%M%S).png && xclip -selection clipboard -target image/png -i /home/metodico/Pictures/Screenshot/$(date +%Y%m%d_%H%M%S).png') end,
+    		on_press = function() awful.spawn.with_shell('maim $HOME/Pictures/Screenshot/$(date +%Y%m%d_%H%M%S).png && xclip -selection clipboard -target image/png -i $HOME/Pictures/Screenshot/$(date +%Y%m%d_%H%M%S).png') end,
      }) 
    }
 end)
