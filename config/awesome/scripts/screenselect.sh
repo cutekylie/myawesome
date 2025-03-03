@@ -1,21 +1,16 @@
 #!/bin/bash
 
-# File per salvare il contatore
-CONTATORE_FILE="/tmp/screenshot_counter.txt"
+COUNTER_FILE="/tmp/screenshot_counter.txt"
 
-# Leggi il contatore corrente
-if [ -f "$CONTATORE_FILE" ]; then
-    CONTATORE=$(cat "$CONTATORE_FILE")
+if [ -f "$COUNTER_FILE" ]; then
+    COUNTER=$(cat "$COUNTER_FILE")
 else
-    CONTATORE=1
+    COUNTER=1
 fi
 
-# Cattura lo screenshot e salvalo con il nome desiderato
-maim --select "/home/metodico/Pictures/Screenshot/$(date +%Y%m%d_%H%M)$CONTATORE.png"
+maim --select "$HOME/Pictures/Screenshot/$(date +%Y%m%d_%H%M)$COUNTER.png"
 
-# Copia il file nella clipboard
-xclip -selection clipboard -t image/png -i "/home/metodico/Pictures/Screenshot/$(date +%Y%m%d_%H%M)$CONTATORE.png"
+xclip -selection clipboard -t image/png -i "$HOME/Pictures/Screenshot/$(date +%Y%m%d_%H%M)$COUNTER.png"
 
-# Salva il nuovo contatore
-echo $((CONTATORE + 1)) > "$CONTATORE_FILE"
+echo $((COUNTER + 1)) > "$COUNTER_FILE"
 
